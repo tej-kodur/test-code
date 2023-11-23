@@ -1,5 +1,6 @@
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('content').innerText = data.articles[0].title;
+    const contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = `<h1>${data.articles[0].title}</h1><p>${data.articles[0}.summary</p>`;
   });
