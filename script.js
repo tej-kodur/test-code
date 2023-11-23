@@ -1,6 +1,6 @@
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('content').innerText = data.articles[0].tags.concern;
+    document.getElementById('content').innerText = data.articles[1].tags.concern;
     
   });
