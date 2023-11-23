@@ -1,6 +1,6 @@
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('content').innerText = data.summary;
+    document.getElementById('content').innerText = data.title;
     
   });
